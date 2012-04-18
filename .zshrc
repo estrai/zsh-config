@@ -2,7 +2,7 @@
 
 autoload -Uz promptinit
 promptinit
-prompt adam1 blue red yellow
+prompt adam1 blue red green
 
 setopt histignorealldups sharehistory
 
