@@ -1,3 +1,16 @@
+# aliases
+# on mac there's no "readlink -f", this does the same
+if [[ $OSTYPE =~ '^darwin' ]]; then
+    readlink() {
+        if [[ $*[1] == '-f' ]]; then
+            python -c 'import os, sys; print os.path.realpath(sys.argv[1])' $*[2]
+
+        else
+            /usr/bin/readlink $*
+        fi
+    }
+fi
+
 # Set up the prompt
 
 autoload -Uz promptinit
