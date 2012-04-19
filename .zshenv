@@ -1,15 +1,15 @@
 if [[ $HOST =~ '^lizak' ]]; then
 	path=(
+		$HOME/bin
+		/opt/local/bin     # macports
+		/opt/local/sbin    # macports
+		/sw/bin            # fink
+		/usr/local/bin
 		/usr/bin
 		/bin
 		/usr/sbin
 		/sbin
-		/usr/local/bin
 		/usr/X11/bin
-		/sw/bin
-		$HOME/bin
-		/opt/local/bin
-		/opt/local/sbin
 		/Applications/MacVim.app/Contents/MacOS
 		$HOME/perl5/perlbrew/etc/cshrc
 		$PATH
