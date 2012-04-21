@@ -11,6 +11,8 @@ if [[ $OSTYPE =~ '^darwin' ]]; then
     }
 fi
 
+alias prove6="prove --exec perl6"
+
 # Set up the prompt
 
 autoload -Uz promptinit
