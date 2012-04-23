@@ -1,7 +1,6 @@
 if [[ $HOST =~ '^lizak' ]]; then
 	path=(
 		/usr/local/zsh/bin # where my custom zsh lives
-		$HOME/bin
 		/opt/local/bin     # macports
 		/opt/local/sbin    # macports
 		/sw/bin            # fink
@@ -16,5 +15,12 @@ if [[ $HOST =~ '^lizak' ]]; then
 		$PATH
 	)
 fi
+
+# default
+
+path=(
+	$HOME/bin
+	$PATH
+)
 
 export PATH
