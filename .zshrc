@@ -82,3 +82,6 @@ RPROMPT=$'$(vcs_info_wrapper)'
 # perlbrew
 source ~/perl5/perlbrew/etc/bashrc
 ####################################
+
+# FIXME temporary addition for rvm, should go to .zshenv
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
