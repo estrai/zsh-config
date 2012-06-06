@@ -25,9 +25,9 @@ setopt histignorealldups sharehistory
 bindkey -e
 
 # bind ↑ to search history backward
-bindkey '\e[A' history-search-backward
+bindkey '\e[A' history-beginning-search-backward
 # bind ↓ to search history forward
-bindkey '\e[B' history-search-forward
+bindkey '\e[B' history-beginning-search-forward
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
