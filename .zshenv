@@ -11,6 +11,8 @@ path=(
 	/usr/X11/bin
 
 	$PATH
+
+	$HOME/.rbenv/bin
 )
 
 if [[ $HOST =~ '^lizak' ]]; then
@@ -27,3 +29,6 @@ if [[ $HOST =~ '^lizak' ]]; then
 fi
 
 export PATH
+export EDITOR=vim
+
+eval "$(rbenv init -)"
