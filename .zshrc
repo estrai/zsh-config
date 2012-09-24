@@ -21,8 +21,8 @@ prompt adam1 blue red green
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
+# vi key bindings
+bindkey -v
 
 # bind ↑ to search history backward
 bindkey '\e[A' history-beginning-search-backward
