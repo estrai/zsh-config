@@ -2,6 +2,7 @@
 
 path=(
 	$HOME/bin
+	/Applications/bin
 	/usr/local/bin
 	/usr/local/sbin
 	/usr/bin
